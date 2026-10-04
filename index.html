@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Official website of PM Shri Moharcherra H.S. School, Moharcherra, Khowai, Tripura">
+
+    <meta name="keywords"
+        content="PM Shri Moharcherra H.S. School, Moharcherra, Khowai, Tripura, PM SHRI School">
+
+    <meta name="author" content="PM Shri Moharcherra H.S. School">
+
+    <title>PM Shri Moharcherra H.S. School | Khowai, Tripura</title>
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f7fb;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: linear-gradient(135deg, #063970, #0b5ca8);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .logo {
+            width: 105px;
+            height: 105px;
+            object-fit: contain;
+            margin: 0 auto 12px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            border: 4px solid #ffd43b;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #e7f2ff;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #062f5c;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ffd43b;
+            color: #062f5c;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.48);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            max-width: 900px;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background: #ffd43b;
+            color: #062f5c;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero-button:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        section {
+            padding: 70px 7%;
+        }
+
+        section:nth-child(even) {
+            background: white;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #063970;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            max-width: 800px;
+            margin: 0 auto 35px;
+            text-align: center;
+            color: #555;
+        }
+
+
+        /* =========================
+           WELCOME
+        ========================= */
+
+        .welcome {
+            text-align: center;
+            background: white;
+        }
+
+        .welcome p {
+            max-width: 850px;
+            margin: 12px auto;
+            font-size: 1.05rem;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-section {
+            background: #eef5fc;
+        }
+
+        .about-text {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px 18px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .icon {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card h3 {
+            color: #063970;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           HEAD MESSAGE
+        ========================= */
+
+        .message-section {
+            background: white;
+        }
+
+        .message-box {
+            max-width: 950px;
+            margin: auto;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            background: #f0f6fd;
+            padding: 35px;
+            border-left: 6px solid #0b5ca8;
+            border-radius: 12px;
+        }
+
+        .message-icon {
+            font-size: 4rem;
+        }
+
+        .message-content p {
+            margin-bottom: 15px;
+        }
+
+        .message-content h3 {
+            color: #063970;
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           ACADEMICS
+        ========================= */
+
+        .academic-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .academic-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #0b5ca8;
+            transition: 0.3s;
+        }
+
+        .academic-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .academic-card h3 {
+            color: #063970;
+            margin: 10px 0;
+        }
+
+        .academic-icon {
+            font-size: 2.4rem;
+        }
+
+
+        /* =========================
+           FACILITIES
+        ========================= */
+
+        .facilities-section {
+            background: #eef5fc;
+        }
+
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 35px;
+        }
+
+        .facility-card {
+            background: white;
+            padding: 28px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .facility-icon {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .facility-card h3 {
+            color: #063970;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           GALLERY
+        ========================= */
+
+        .gallery-section {
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .gallery-item {
+            background: #f4f7fa;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item p {
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            color: #063970;
+        }
+
+
+        /* =========================
+           NOTICE BOARD
+        ========================= */
+
+        .notice-section {
+            background: #eef5fc;
+        }
+
+        .notice-board {
+            max-width: 900px;
+            margin: 35px auto 0;
+        }
+
+        .notice {
+            background: white;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #0b5ca8;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .notice-date {
+            display: inline-block;
+            background: #063970;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 25px 15px;
+            background: #f3f7fb;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .contact-icon {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            color: #063970;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #062f5c;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        .top-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 45px;
+            height: 45px;
+            background: #ffd43b;
+            color: #062f5c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+            z-index: 999;
+        }
+
+
+        /* =========================
+           MOBILE RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .info-grid,
+            .academic-grid,
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .facility-grid,
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-content h2 {
+                font-size: 2.3rem;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            nav a {
+                padding: 11px 10px;
+                font-size: 0.85rem;
+            }
+
+            .hero {
+                min-height: 430px;
+            }
+
+            .hero-content h2 {
+                font-size: 1.9rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .info-grid,
+            .academic-grid,
+            .facility-grid,
+            .gallery-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .message-box {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px;
+            }
+
+            .gallery-item img {
+                height: 220px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body id="top">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <img
+            src="school-logo.png"
+            alt="PM Shri Moharcherra H.S. School Logo"
+            class="logo"
+        >
+
+        <h1>PM Shri Moharcherra H.S. School</h1>
+
+        <p>Pradhan Mantri Schools for Rising India</p>
+
+        <p>Moharcherra, Khowai, Tripura</p>
+
+    </header>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#academics">Academics</a>
+
+        <a href="#facilities">Facilities</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#notices">Notices</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <div class="hero">
+
+        <img
+            src="School-building.jpg"
+            alt="PM Shri Moharcherra H.S. School Building"
+        >
+
+        <div class="hero-content">
+
+            <h2>Welcome to PM Shri Moharcherra H.S. School</h2>
+
+            <p>
+                Inspiring young minds through quality education,
+                discipline, creativity and holistic development.
+            </p>
+
+            <a href="#about" class="hero-button">
+                Explore Our School
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         WELCOME
+    ========================== -->
+
+    <section id="home" class="welcome">
+
+        <h2>Welcome to Our School</h2>
+
+        <p class="section-intro">
+            Welcome to the official website of
+            PM Shri Moharcherra H.S. School.
+        </p>
+
+        <p>
+            Our school is committed to providing quality education,
+            developing skills and encouraging students to become
+            responsible, confident and capable citizens.
+        </p>
+
+        <p>
+            We believe in the overall development of every student
+            through academic learning, creativity, sports,
+            cultural activities and values.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about" class="about-section">
+
+        <h2>🏫 About Our School</h2>
+
+        <div class="about-text">
+
+            <p>
+                PM Shri Moharcherra H.S. School is committed to
+                creating a positive and inclusive learning environment
+                where students can develop academically, socially,
+                physically and creatively.
+            </p>
+
+            <p>
+                The school aims to encourage curiosity, discipline,
+                creativity, knowledge and responsible citizenship
+                among students.
+            </p>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-card">
+
+                <div class="icon">📍</div>
+
+                <h3>Location</h3>
+
+                <p>
+                    Moharcherra, Khowai, Tripura
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">🎓</div>
+
+                <h3>Education</h3>
+
+                <p>
+                    School education with focus on
+                    holistic development.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">🏫</div>
+
+                <h3>Institution</h3>
+
+                <p>
+                    PM SHRI School
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">🌱</div>
+
+                <h3>Our Goal</h3>
+
+                <p>
+                    Education, excellence and
+                    responsible citizenship.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HEAD MESSAGE
+    ========================== -->
+
+    <section class="message-section">
+
+        <h2>👨‍🏫 Message from the Head of Institution</h2>
+
+        <div class="message-box">
+
+            <div class="message-icon">
+                🏫
+            </div>
+
+            <div class="message-content">
+
+                <p>
+                    Welcome to PM Shri Moharcherra H.S. School.
+                </p>
+
+                <p>
+                    Our aim is to provide students with quality
+                    education, discipline, knowledge and opportunities
+                    for holistic development.
+                </p>
+
+                <p>
+                    We encourage our students to learn with curiosity,
+                    respect others, develop confidence and become
+                    responsible citizens of our society.
+                </p>
+
+                <h3>
+                    Head of Institution
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACADEMICS
+    ========================== -->
+
+    <section id="academics">
+
+        <h2>🎓 Academics</h2>
+
+        <p class="section-intro">
+            Our academic programme focuses on knowledge,
+            skills, creativity, discipline and the overall
+            development of students.
+        </p>
+
+
+        <div class="academic-grid">
+
+
+            <div class="academic-card">
+
+                <div class="academic-icon">📚</div>
+
+                <h3>Classes & Curriculum</h3>
+
+                <p>
+                    Information about classes, subjects
+                    and curriculum will be provided here.
+                </p>
+
+            </div>
+
+
+            <div class="academic-card">
+
+                <div class="academic-icon">📝</div>
+
+                <h3>Examinations</h3>
+
+                <p>
+                    Examination schedules, results and
+                    academic information can be published here.
+                </p>
+
+            </div>
+
+
+            <div class="academic-card">
+
+                <div class="academic-icon">📅</div>
+
+                <h3>Academic Calendar</h3>
+
+                <p>
+                    Important academic dates, events and
+                    activities can be updated here.
+                </p>
+
+            </div>
+
+
+            <div class="academic-card">
+
+                <div class="academic-icon">🎯</div>
+
+                <h3>Student Development</h3>
+
+                <p>
+                    Academic, cultural, sports and
+                    co-curricular activities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FACILITIES
+    ========================== -->
+
+    <section id="facilities" class="facilities-section">
+
+        <h2>🏫 School Facilities</h2>
+
+        <p class="section-intro">
+            Facilities and activities that support learning,
+            creativity, health and the overall development
+            of students.
+        </p>
+
+
+        <div class="facility-grid">
+
+
+            <div class="facility-card">
+
+                <div class="facility-icon">📚</div>
+
+                <h3>Library</h3>
+
+                <p>
+                    A learning space where students can
+                    read and develop knowledge.
+                </p>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <div class="facility-icon">💻</div>
+
+                <h3>Computer Education</h3>
+
+                <p>
+                    Opportunities for students to develop
+                    digital and computer skills.
+                </p>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <div class="facility-icon">⚽</div>
+
+                <h3>Sports & Games</h3>
+
+                <p>
+                    Activities encouraging physical fitness,
+                    teamwork and sportsmanship.
+                </p>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <div class="facility-icon">🔬</div>
+
+                <h3>Science Learning</h3>
+
+                <p>
+                    Practical and activity-based opportunities
+                    for scientific learning.
+                </p>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <div class="facility-icon">🎨</div>
+
+                <h3>Cultural Activities</h3>
+
+                <p>
+                    Opportunities for cultural and
+                    creative activities.
+                </p>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <div class="facility-icon">🌱</div>
+
+                <h3>Green Environment</h3>
+
+                <p>
+                    A healthy and pleasant environment
+                    supporting student learning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section id="gallery" class="gallery-section">
+
+        <h2>📸 School Gallery</h2>
+
+        <p class="section-intro">
+            A glimpse of PM Shri Moharcherra H.S. School.
+        </p>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="School-building.jpg"
+                    alt="School Building"
+                >
+
+                <p>School Building</p>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="School-building.jpg"
+                    alt="School Campus"
+                >
+
+                <p>School Campus</p>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="School-building.jpg"
+                    alt="School Entrance"
+                >
+
+                <p>School Entrance</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NOTICES
+    ========================== -->
+
+    <section id="notices" class="notice-section">
+
+        <h2>📢 Latest Notices</h2>
+
+        <p class="section-intro">
+            Important school announcements and updates.
+        </p>
+
+
+        <div class="notice-board">
+
+
+            <div class="notice">
+
+                <span class="notice-date">
+                    03 Oct 2026
+                </span>
+
+                <p>
+                    Important school announcements will
+                    be displayed here.
+                </p>
+
+            </div>
+
+
+            <div class="notice">
+
+                <span class="notice-date">
+                    01 Oct 2026
+                </span>
+
+                <p>
+                    Academic information and examination
+                    updates will be published here.
+                </p>
+
+            </div>
+
+
+            <div class="notice">
+
+                <span class="notice-date">
+                    28 Sep 2026
+                </span>
+
+                <p>
+                    School activities and upcoming events
+                    will be published here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+        <p class="section-intro">
+            For official communication, please contact
+            the school office.
+        </p>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📍</div>
+
+                <h3>School Address</h3>
+
+                <p>
+                    PM Shri Moharcherra H.S. School<br>
+                    Moharcherra, Khowai<br>
+                    Tripura
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📞</div>
+
+                <h3>Phone</h3>
+
+                <p>
+                    School Office<br>
+                    Contact number will be
+                    updated here.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">✉️</div>
+
+                <h3>Email</h3>
+
+                <p>
+                    Official school email<br>
+                    will be updated here.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">🕐</div>
+
+                <h3>School Hours</h3>
+
+                <p>
+                    Monday – Saturday<br>
+                    School hours will be
+                    updated here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p class="footer-title">
+            PM Shri Moharcherra H.S. School
+        </p>
+
+        <p>
+            Moharcherra, Khowai, Tripura
+        </p>
+
+        <p>
+            © 2026 PM Shri Moharcherra H.S. School
+        </p>
+
+        <p>
+            All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <a
+        href="#top"
+        class="top-button"
+        title="Back to top"
+    >
+        ↑
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        console.log(
+            "Welcome to PM Shri Moharcherra H.S. School website."
+        );
+
+    </script>
+
+
+</body>
+
+</html>
